@@ -12,5 +12,6 @@ def send_sms(doc, event):
     from frappe.core.doctype.sms_settings.sms_settings import send_sms
     message = "Thank you for your purchase at Frapino. You have spent Rs " + str(doc.grand_total) + " via Cash on : "  + (doc.posting_date)
     send_sms([mobile_number], msg=message)
+    
 
     
