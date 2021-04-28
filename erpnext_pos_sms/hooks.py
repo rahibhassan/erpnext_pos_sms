@@ -90,7 +90,7 @@ app_license = "MIT"
 
 doc_events = {
    "Sales Invoice": {
-      "on_submit": ["erpnext_pos_sms.sms.send_sms"]
+      "on_submit": ["erpnext_pos_sms.sms.send_sms","erpnext_pos_sms.url_shorten.make_shorten"]
 		
    }
 
